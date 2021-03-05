@@ -1,0 +1,34 @@
+{
+  "name": "blockcite",
+  "version": "0.0.1",
+  "authors": [
+    "An Hoang <anhoang@firstmeta.com>"
+  ],
+  "description": "Blockcite App for interfacing with block-chain",
+  "main": "app.js",
+  "keywords": [
+    "blockcite",
+    "cite",
+    "notary",
+    "blockchain",
+    "bitcoin"
+  ],
+  "license": "Private",
+  "homepage": "index.ejs",
+  "dependencies": {
+    "angular-route": "~1.3.15",
+    "angular-resource": "~1.3.15",
+    "cryptojslib": "~3.1.2",
+    "ng-file-upload": "~4.2.1",
+    "async": "~1.2.1",
+    "blockUI": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ]
+}

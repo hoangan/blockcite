@@ -1,0 +1,71 @@
+<!--Cited {{ data }}-->
+
+<div class="col-md-6 col-md-offset-3">
+	<h3 class="text-center">Cite data to the Blockchain</h3>
+	<div class="form-group">
+<!--		<div class="form-group">
+			<input class="form-control" type="text" ng-model="data" />
+		</div>-->
+		
+		    <div ngf-drop ngf-select ng-model="files" class="drop-box" ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true" ngf-accept="'image/*,application/pdf,.doc,.docx'">Drop Images or PDFs files here</div>
+    		<div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+				
+<!--			<img ngf-src="files[0]" ngf-default-src="" ngf-accept="'image/*'">-->
+   			
+			 <!--<div style="font:smaller">{{files[0].name}}</div>-->
+			
+		<!--<a href="#/cite" class="btn btn-primary">Cite it !</a>-->
+		
+		
+		<button type="button" class="hide" data-toggle="modal" data-target="#myModal" id="showModalBtn">Open Modal</button>
+	</div>
+</div>
+
+<!-- Modal -->
+  <div class="modal fade" id="confirmModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Cite this</h3>
+           <p>{{files[0].name}}</p>
+        </div>
+        <div class="modal-body">
+          <h4>Citers</h4>
+          <input class="form-control" type="text" ng-model="authors" />
+          <em>(separate by comma)</em>
+        </div>
+        <div class="modal-footer">
+          <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+          <a class="pull-left">Cancel</a>
+          <button type="submit" class="btn btn-primary btn-lg" ng-click="cite()">Cite it !</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+<!-- Modal -->
+  <div class="modal fade" id="spinnerModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <!--<div class="modal-header">
+          
+          
+        </div>
+        <div class="modal-body">
+         
+        </div>
+        <div class="modal-footer">
+          
+        </div>-->
+          <div class="progress"><div>Loading…</div></div>
+      </div>
+      
+    </div>
+  </div>

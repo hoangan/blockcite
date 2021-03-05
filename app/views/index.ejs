@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-us" ng-app="blockciteApp">
+	<head>
+		<meta charset="UTF-8"></meta>
+			<title>Blockcite - Cite all your documents with blockchain.</title>
+			<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+			<link rel="stylesheet" href="lib/blockcite/blockcite.css" />
+			<link rel="stylesheet" href="lib/blockcite/spinner.css" />
+			<script src="lib/jquery/dist/jquery.min.js"></script>
+			<script src="lib/blockUI/jquery.blockUI.js"></script>
+			<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script src="lib/cryptojslib/rollups/hmac-sha256.js"></script>
+			<script src="lib/cryptojslib/components/lib-typedarrays-min.js"></script>
+			<script src="lib/async/lib/async.js"></script>
+			<script src="lib/angular/angular.min.js"></script>
+			<script src="lib/angular-route/angular-route.min.js"></script>
+			<script src="lib/angular-resource/angular-resource.min.js"></script>
+<!--			<script src="lib/ng-file-upload/ng-file-upload-shim.min.js"></script> -->
+			<script src="lib/ng-file-upload/ng-file-upload.min.js"></script> 
+			
+			<script src="app.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">{ blockCITE }</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/"><i class="fa fa-home"></i>Home</a></li>
+					<li><a href="#/cite"><i class="fa fa-home"></i>Cite</a></li>
+					<li><a href="#/verify"><i class="fa fa-home"></i>Verify</a></li>
+					<li><a href="#/login"><i class="fa fa-home"></i>Login</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+		
+		<div class="container">
+			<div ng-view></div>
+		</div>
+		
+	</body>
+</html>

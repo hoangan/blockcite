@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="text-center">
+				<h1>Citation</h1>
+				<h2>{{file_name}}</h2>
+				<span>has been cited by {{owner}}</span>
+				<div>ON THE FOLLOWING DATE</div>
+				<h3>{{cited_time}}</h3>
+			</div>
+			<br /><br /><br />
+			<div>
+				<span>CITED HASH</span>
+				<div>{{citing_data}}</div>
+			</div>
+			<br />
+			<div>
+				<span>BLOCKCHAIN TRANSACTION ID</span>
+				<div><a ng-href="https://insight.bitpay.com/tx/{{blockchain_txn}}">{{blockchain_txn}}</a></div>
+			</div>
+		</div>
+	</div>
+</div>
